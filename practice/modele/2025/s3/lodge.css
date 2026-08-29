@@ -1,0 +1,22 @@
+body { 
+  background-color: gray;
+}
+
+#canvas {
+  display: block;
+}
+
+#mesaj {
+  width: 800px;
+  text-align: center; 
+  font-family: Arial; 
+  font-size: 18px; 
+}
+
+#detalii {
+  width: 800px;
+  text-align: center; 
+  font-family: Arial; 
+  font-size: 12px; 
+  display: none;
+}

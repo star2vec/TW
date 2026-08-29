@@ -1,0 +1,76 @@
+body {
+    background-color: violet;
+}
+
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 55px);
+    grid-template-rows: repeat(4, 80px)
+}
+
+.container div {
+    padding: 25px;
+    border: DarkGoldenrod dotted 8px;
+    background: Gold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sus {
+    grid-row: 1/2;
+    grid-column: 1/6;
+}
+
+#mid {
+    grid-row: 2/4;
+    grid-column: 1/6;
+    display: flex;
+    justify-content: space-around;
+}
+
+#st {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+#jos {
+    background: DarkGoldenrod;
+    grid-column: 2/5;
+    height: 0px;
+}
+
+#dr {
+    grid-row: 4/5;
+    grid-column: 5/6;
+}
+
+#mid .ochi {
+    width: 20px;
+    background: antiquewhite;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.45s ease;
+}
+
+#mid .ochi:active {
+    background-color: red; 
+    color: red;          
+    transform: scale(0.33); 
+}
+
+@media (min-width: 333px) and (max-width: 622px) {
+    .container {
+        display: block;
+    }
+
+    .ochi {
+        transform: scaleX(0.5);
+    }
+}
+
+
+

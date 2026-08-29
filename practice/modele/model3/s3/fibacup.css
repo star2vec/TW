@@ -1,0 +1,42 @@
+body { 
+  background-color: gray;
+}
+
+#canvas {
+  display: block;
+}
+
+#mesaj {
+  width: 850px;
+  text-align: center; 
+  font-family: Arial; 
+  font-size: 18px; 
+}
+
+.steaguri {
+  display: flex;
+  width: 850px;
+  justify-content: center;
+}
+
+.steaguri img {
+  width: 200px;
+  height: auto;
+}
+
+#nume {
+  margin: 0 auto;
+  width: 850px;
+  position: absolute;
+  text-align: center; 
+  font-family: Arial; 
+  font-size: 20px; 
+  display: none;
+}
+
+#nume1 {
+  display: none;
+}
+#nume2 {
+  display: none;
+}

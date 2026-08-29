@@ -1,0 +1,27 @@
+body {
+    background-color: greenyellow;
+}
+
+.badger1 {
+   position: absolute;
+   width: 50px;
+   height: auto;                
+}
+
+.badger2 {
+   position: absolute;
+   width: 50px;
+   height: auto;                
+}
+
+.mush {
+   position: absolute;
+   width: 30px;
+   height: auto;                
+}
+
+.counter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}

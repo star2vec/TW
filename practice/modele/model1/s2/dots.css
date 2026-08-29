@@ -1,0 +1,15 @@
+.dot {
+   border-radius: 50%;
+   position: absolute;
+}
+
+#size {
+    position: relative; 
+    left: 20px;
+}
+
+#counter {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}

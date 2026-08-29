@@ -1,0 +1,20 @@
+body {
+    background-image: url('rabbits.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.rabbit {
+   position: absolute;
+   width: 50px;
+   height: auto;                
+}
+
+#counter {
+    position: fixed;
+    color: white;
+    top: 20px;
+    right: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
