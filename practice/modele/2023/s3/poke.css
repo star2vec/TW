@@ -1,0 +1,27 @@
+body { 
+  background-color: white;
+}
+
+#canvas {
+  display: block;
+}
+
+#mesaj {
+  width: 300px;
+  text-align: center; 
+  font-family: Arial; 
+  font-size: 24px; 
+}
+
+#imagine {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+#detalii {
+  width: 300px;
+  font-family: Arial; 
+  font-size: 18px; 
+  display: none;
+}

@@ -163,7 +163,6 @@ window.onload = function() {
                     i++;
                 }, 500);
                 break;
-            
         }
    });
 }
