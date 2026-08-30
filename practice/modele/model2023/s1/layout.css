@@ -1,0 +1,53 @@
+.container {
+    border: blue dotted;
+    height: 50vh;
+    width: 250px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container div {
+    border: black double 8px;
+    background: white;
+    color: black;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: all 3s ease;
+}
+
+#d1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+#d2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+#d3 {
+    grid-row: 2;
+    grid-column: 2;
+}
+#d4 {
+    grid-row: 3;
+    grid-column: 2;
+}
+#d5 {
+    grid-row: 1/4;
+    grid-column: 3;
+}
+
+@media (max-height: 500px) and (max-width: 600px) {
+    .container {
+        display: block; 
+    }
+    
+    .container div:hover {
+        font-size: 30px; 
+    }
+}
+
+
+
