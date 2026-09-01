@@ -1,0 +1,4 @@
+body { background-color: black; }         /* TODO */
+#canvas { display: block; }
+#mesaj  { color: white; font-size: 20px; }
+#detalii{ color: gray; }

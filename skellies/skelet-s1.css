@@ -1,0 +1,56 @@
+/* ================= LAYOUT ================= */
+body {
+  background-color: violet;                    /* TODO: fundalul din imagine */
+  /* fundal-imagine + centrare container (examen 2026):
+  background: url("fundal.jpg") no-repeat center / cover;
+  min-height: 100vh;
+  display: flex; justify-content: center; align-items: center; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 55px);      /* TODO: nr. coloane × lățimea din enunț */
+  gap: 5px;                                    /* TODO: gap-ul din enunț */
+}
+
+.container div {
+  padding: 25px;                               /* TODO */
+  border: 8px dotted DarkGoldenrod;            /* TODO: culoare/stil/grosime; dotted=punctat, dashed=întrerupt */
+  /* varianta outline (nu ocupă spațiu): outline: 3px dashed black; outline-offset: -5px; */
+  background: Gold;                            /* TODO: culoarea default */
+  color: black;
+  display: flex; justify-content: center; align-items: center;   /* text centrat */
+}
+
+/* întinderi pe mai multe celule — TODO după imagine */
+#d1 { grid-column: 1 / 6; grid-row: 1; }
+#d2 { grid-column: 2 / 5; grid-row: 2 / 4; }
+
+/* divurile "speciale" cu altă culoare — TODO */
+#d6, #d7 { background: DarkGoldenrod; }
+
+/* ================= CERCUL ================= */
+.cerc {
+  border: none;                                /* suprascrie regula generală */
+  border-radius: 50%;
+  background: AntiqueWhite;                    /* TODO */
+}
+
+/* ============ INTERACȚIUNE + TRANZIȚIE ============ */
+.cerc { transition: all 0.45s; }               /* TODO: durata din enunț */
+.cerc:active {                                 /* :active = ținut apăsat; :hover = deasupra */
+  background: Red;                             /* TODO */
+  color: Red;                                  /* text = fundal → "dispare" */
+  transform: scale(0.33);                      /* TODO: "o treime" */
+}
+
+/* ================= MEDIA QUERY ================= */
+@media (min-width: 333px) and (max-width: 622px) {   /* TODO: limitele din enunț */
+  .container { display: block; }               /* unele sub altele, lățime întreagă */
+  .container div { width: auto; }
+  .cerc { transform: scaleX(0.5); }            /* jumătate pe orizontală */
+  /* varianta cu REORDONARE (examen 2026):
+  .container { display: flex; flex-direction: column; }
+  .container div { width: 200px; margin: 0 !important; }
+  #d1 { order: 1; }  #d3 { order: 2; }  ... */
+}
