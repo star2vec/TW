@@ -1,0 +1,123 @@
+body {
+    background-image: url('bgr-at.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(4, 100px);
+}
+
+.container div {
+    padding: 20px;
+    outline: black dashed 3px;
+    outline-offset: -5px;
+    background: #54aa9f;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#cap, #b2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100px;
+}
+
+#cap {
+    grid-column: 2/4;
+    grid-row: 1;
+    background-image: url('bmo.jpg');
+    cursor: pointer;
+    transition: all 0.24s ease-in-out;
+}
+
+#cap:active {
+    background-image: url('bmo-press.png');
+}
+
+#mst {
+    grid-column: 1;
+    grid-row: 2;
+    cursor: pointer;
+    transition: all 0.41s ease-in-out;
+}
+
+#mdr {
+    grid-column: 4;
+    grid-row: 2;
+    cursor: pointer;
+    transition: all 0.41s ease-in-out;
+}
+
+#mdr:hover {
+    transform: translateX(250px) scaleX(6);     
+    /* sau fara translate X si cu asta:
+    transform-origin: left;*/
+}
+
+#mst, #mdr {
+    margin-top: 10px;
+    /* puteam in loc de asta sa facem si cu height sau width normal */
+}
+
+
+#pst {
+    grid-column: 2;
+    grid-row: 4;
+    margin-left: 10px;
+}
+
+#pdr {
+    grid-column: 3;
+    grid-row: 4;
+    margin-right: 10px;
+}
+
+#b1 {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+#b2 {
+    grid-column: 2/4;
+    grid-row: 3;
+     background-image: url('buttons.jpg');
+}
+
+@media (min-width: 262px) and (max-width: 667px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container div {
+        width: 200px;
+        margin: 0 !important;
+    }
+    
+    #cap { order: 1; }
+    #b1  { order: 2; } /* Div-ul 2 */
+    #mdr { order: 3; } /* Div-ul 3 */
+    #mst { order: 4; } /* Div-ul 1 */
+    #b2  { order: 5; } /* Trunchiul */
+    #pst { order: 6; } /* Div-ul 5 */
+    #pdr { order: 7; } /* Div-ul 6 */
+}
+
+
+

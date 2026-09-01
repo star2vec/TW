@@ -1,0 +1,17 @@
+body { 
+  background-color: black;
+}
+
+#canvball {
+  display: block;
+}
+
+#counter {
+  display: block;
+  color: red;
+  font-family: monospace;
+  width: 600px;
+  text-align: center;
+  font-size: 30px;
+}
+

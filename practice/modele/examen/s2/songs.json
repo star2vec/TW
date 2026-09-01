@@ -1,0 +1,17 @@
+[
+  {
+    "name": "BOHEMIAN RHAPSODY",
+    "image": "queen.jpg",
+    "url": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+  },
+  {
+    "name": "HOTEL CALIFORNIA",
+    "image": "eagles.jpg",
+    "url": "https://en.wikipedia.org/wiki/Hotel_California"
+  },
+  {
+    "name": "LET IT BE",
+    "image": "beatles.jpg",
+    "url": "https://en.wikipedia.org/wiki/Let_It_Be_(Beatles_song)"
+  }
+]
