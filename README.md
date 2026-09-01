@@ -366,6 +366,9 @@ if (nr % 5 == 0) adaugaCiuperca();   // în crestenr(), după incrementare
 elem.addEventListener("click", function(e) {
   e.stopPropagation();
   elem.innerHTML = elem.innerHTML.split("").reverse().join("");   // inversare string
+  /* let elemente = ["A", "B", "C", "D", "E"];
+
+elemente.sort(() => Math.random() - 0.5); asa ca sa fei sortate random/jumbled*/ 
 });
 document.addEventListener("click", function() { resetToate(); }); // click oriunde altundeva
 
